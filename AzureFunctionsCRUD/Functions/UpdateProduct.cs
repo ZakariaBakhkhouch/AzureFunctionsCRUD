@@ -11,7 +11,7 @@ namespace AzureFunctionsCRUD.Functions
         }
 
         [FunctionName("UpdateProduct")]
-        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "PUT", Route = null)] HttpRequest req, ILogger log)
+        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "PUT", Route = "Product")] HttpRequest req, ILogger log)
         {
             try
             {

@@ -11,7 +11,7 @@ namespace AzureFunctionsCRUD.Functions
         }
 
         [FunctionName("CreateProduct")]
-        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "POST", Route = null)] HttpRequest req, ILogger log)
+        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "POST", Route = "Product")] HttpRequest req, ILogger log)
         {
             try
             {

@@ -11,7 +11,7 @@ namespace AzureFunctionsCRUD.Functions
         }
 
         [FunctionName("GetAllProducts")]
-        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "GET", Route = null)] HttpRequest req, ILogger log)
+        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "GET", Route = "Products")] HttpRequest req, ILogger log)
         {
             try
             {

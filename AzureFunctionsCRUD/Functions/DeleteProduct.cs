@@ -11,7 +11,7 @@ namespace AzureFunctionsCRUD.Functions
         }
 
         [FunctionName("DeleteProduct")]
-        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "DELETE", Route = null)] HttpRequest req, ILogger log)
+        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "DELETE", Route = "Product/id")] HttpRequest req, ILogger log)
         {
             try
             {
